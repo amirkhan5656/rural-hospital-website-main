@@ -753,7 +753,7 @@ export default function HospitalWebsite() {
                     </div>
                     <div className="flex items-center space-x-2">
                       <span className="text-lg">👩‍⚕️</span>
-                      <span>Gynecology & Women's Health</span>
+                      <span>Gynecology & Women&apos;s Health</span>
                     </div>
                     <div className="flex items-center space-x-2">
                       <span className="text-lg">🚨</span>
@@ -1243,7 +1243,7 @@ export default function HospitalWebsite() {
                 </div>
                 <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                   <p className="text-sm text-blue-800 dark:text-blue-300">
-                    <strong>Remember:</strong> Bring your child's immunization card for all visits.
+                    <strong>Remember:</strong> Bring your child&apos;s immunization card for all visits.
                   </p>
                 </div>
               </CardContent>
