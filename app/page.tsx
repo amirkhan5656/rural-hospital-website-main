@@ -367,7 +367,7 @@ export default function HospitalWebsite() {
         {/* Background Image - Responsive */}
         <div className="absolute inset-0">
           <Image
-            src="https://relief.rmi.edu.pk/wp-content/uploads/2024/10/gari-tajik.jpg"
+            src="/gari-tajik.jpg"
             alt="Credit to RMI Relief image"
             width={1024}
             height={576}
