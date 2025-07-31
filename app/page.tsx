@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { Phone, MapPin, Clock, Shield, TestTube, Menu, X, Moon, Sun, CheckCircle, AlertCircle } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { motion } from "framer-motion"
+import Image from "next/image";
 
 export default function HospitalWebsite() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -365,17 +366,14 @@ export default function HospitalWebsite() {
       <section className="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
         {/* Background Image - Responsive */}
         <div className="absolute inset-0">
-          {/* Mobile Image - Full building view */}
-          <img
-            src="/placeholder.svg?height=600&width=400"
-            alt="Government Category D Hospital Building"
-            className="w-full h-full object-cover sm:hidden"
-          />
-          {/* Desktop Image - Wide hospital view */}
-          <img
-            src="https://relief.rmi.edu.pk/wp-content/uploads/2024/10/gari-tajik-1536x400.jpg"
-            alt="Government Category D Hospital Building"
-            className="w-full h-full object-cover hidden sm:block"
+          <Image
+            src="https://relief.rmi.edu.pk/wp-content/uploads/2024/10/gari-tajik.jpg"
+            alt="Credit to RMI Relief image"
+            width={1024}
+            height={576}
+            sizes="(max-width: 1024px) 100vw, 1024px"
+            priority
+            className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70 dark:from-black/80 dark:via-black/60 dark:to-black/80"></div>
         </div>
